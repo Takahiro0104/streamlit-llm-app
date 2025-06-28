@@ -10,7 +10,7 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
 # LLM設定（GPT-4o miniを使用）
-llm = ChatOpenAI(openai_api_key=api_key, model_name="gpt-4o-mini", temperature=0)
+llm = ChatOpenAI(openai_api_key=api_key, model_name="GPT-4o mini", temperature=0)
 
 # ▼ 関数：専門家の種類と入力テキストを受け取り、LLMから回答を得る
 def generate_response(role: str, user_input: str) -> str:
